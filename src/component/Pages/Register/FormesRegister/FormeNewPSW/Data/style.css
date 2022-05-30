@@ -1,0 +1,132 @@
+        .valid {
+            color: green;
+            font-weight: bold;
+        }
+        
+        .validationList li,
+        a {
+            margin: 10px 0;
+        }
+        
+        .textValid {
+            margin: 30vh 20vh;
+            margin-bottom: 0;
+            width: 400px;
+        }
+        
+        .inputText {
+            padding: 15px 10px;
+            width: 100%;
+            font-size: 22px;
+        }
+        
+        .btn-success {
+            opacity: 1;
+        }
+        
+        .confirme,
+        .validBtn {
+            opacity: 0.5;
+        }
+        
+        .validBtn,
+        .btn-success,
+        .confirme {
+            background-color: green;
+            border-color: #28a745;
+            border: 1px solid transparent;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .btn-success,
+        #userPassword,
+        .validBtn,
+        .confirme {
+            border: 1px solid #ced4da;
+            border-radius: 10px;
+            display: block;
+            width: 100%;
+            display: inline-block;
+            font-weight: 400;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            -ms-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+        
+        .validBtn {
+            background-color: green;
+            font-weight: bold;
+            opacity: 0.5;
+        }
+        
+        .validationList {
+            margin: 20px;
+        }
+        
+        .complet {
+            color: gray;
+        }
+        
+        .validation {
+            padding: 10px;
+        }
+        
+        .validation p {
+            opacity: 0.6;
+            font-size: medium;
+        }
+        /*Show PSW*/
+        
+        .first-example,
+        .second-example,
+        .third-example {
+            margin-bottom: 10px;
+        }
+        
+        input {
+            width: 250px;
+            padding: 15px 12px;
+            font-size: 22px;
+        }
+        
+        .fa {
+            font-size: 22px;
+            margin-left: -47px;
+            top: 4px;
+            position: relative;
+        }
+        
+        #validation-txt {
+            color: red;
+            font-size: 18px;
+            width: 300px;
+        }
+        
+        #password-3 {
+            -webkit-text-security: disc;
+            -moz-text-security: circle;
+            text-security: circle;
+        }
+        
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }

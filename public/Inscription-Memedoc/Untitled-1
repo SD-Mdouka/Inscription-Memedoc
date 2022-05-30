@@ -1,0 +1,154 @@
+/*eye html*/
+<button class="eye">
+      <i class="far fa-eye hide" id="openEye"></i>
+      <i class="far fa-eye-slash" id="closeEye"></i>
+
+    </button>
+/*js*/
+const eyeBtn = document.querySelector(".eye");
+const actionBtn = document.querySelector(".action");
+const password = document.getElementById("password");
+let open = false;
+let showPwd = false;
+/*css */
+.hide {
+  display: none;
+}
+
+.eye {
+  display: inline-block;
+  background-color: transparent;
+  padding: 5px;
+  width: 50px;
+  cursor: pointer;
+}
+
+/*password*/
+<div style="margin:30vh 20vh; margin-bottom:0; width: 400px;">
+  <input id="userPassword" type="password" style="padding: 15px 10px; width: 100%; font-size: 22px;" />
+</div>
+<div style="margin:5vh 20vh; width: 420px; border: 2px solid grey;">
+  <ul class="validationList">
+    <li id="length">Length - 8</li>
+    <li id="upperCase">Upper-case</li>
+    <li id="lowerCase">Lower-case</li>
+    <li id=number>Number</li>
+    <li id="specialCharacter">Special Character</li>
+  </ul>
+</div>
+/*css*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.invalid {
+  color: red;
+  font-weight: bold;
+}
+
+.valid {
+  color: green;
+  font-weight: bold;
+}
+
+.validationList li {
+  margin: 10px 0;
+}
+/*js*/
+$('#userPassword').keyup(function() {
+  var password = $('#userPassword').val();
+
+  var pattern = /^[a-zA-Z0-9- ]*$/;
+
+  var lengthValidationMessage = $('#length');
+  var ucVM = $('#upperCase');
+  var lcVM = $('#lowerCase');
+  var nbVM = $('#number');
+  var scVM = $('#specialCharacter');
+
+  if (password === '') {
+    ucVM.removeClass('invalid').removeClass('valid');
+    lcVM.removeClass('invalid').removeClass('valid');
+    lengthValidationMessage.removeClass('invalid').removeClass('valid');
+    nbVM.removeClass('invalid').removeClass('valid');
+    scVM.removeClass('invalid').removeClass('valid');
+
+    return false;
+  }
+
+  //length Validation
+  if (!IsLengthValid(password)) {
+    lengthValidationMessage.removeClass('valid').addClass('invalid');
+  } else
+    lengthValidationMessage.removeClass('invalid').addClass('valid');
+
+  //upperCase Validation
+  if (!IsUpperCaseValid(password))
+    ucVM.removeClass('valid').addClass('invalid');
+  else
+    ucVM.removeClass('invalid').addClass('valid');
+
+  //lowerCase Validation
+  if (!IsLowerCaseValid(password))
+    lcVM.removeClass('valid').addClass('invalid');
+  else
+    lcVM.removeClass('invalid').addClass('valid');
+
+  //numbers Validation
+  if (!IsNumberValid(password))
+    nbVM.removeClass('valid').addClass('invalid');
+  else
+    nbVM.removeClass('invalid').addClass('valid');
+
+  //specialCharcter Validation
+  if (!IsSpecialCharacterValid(password))
+    scVM.removeClass('valid').addClass('invalid');
+  else
+    scVM.removeClass('invalid').addClass('valid');
+});
+
+function IsLengthValid(password) {
+  if (password.length >= 8) {
+    return true;
+  } else
+    return false;
+}
+
+function IsUpperCaseValid(password) {
+  var upperCase = new RegExp('[A-Z]');
+
+  if (!password.match(upperCase))
+    return false;
+  else
+    return true;
+}
+
+function IsLowerCaseValid(password) {
+  var lowerCase = new RegExp('[a-z]');
+
+  if (!password.match(lowerCase))
+    return false;
+  else
+    return true;
+}
+
+function IsNumberValid(password) {
+  var numbers = new RegExp('[0-9]');
+
+  if (!password.match(numbers))
+    return false;
+  else
+    return true;
+}
+
+function IsSpecialCharacterValid(password) {
+  var specialChars = new RegExp(/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/);
+
+  if (!specialChars.test(password))
+    return false;
+  else
+    return true;
+}

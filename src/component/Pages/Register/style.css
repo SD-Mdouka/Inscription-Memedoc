@@ -1,0 +1,36 @@
+.btn,
+.form-control {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.forgot-pass,
+.forgot-pass:hover {
+    color: black;
+}
+
+.politique,
+.politique:hover {
+    color: rgb(68, 133, 4);
+    text-decoration: none;
+}
+
+.politique::before,
+.politique::after {
+    content: ' ';
+}
+
+.spams {
+    color: grey;
+}
+
+.forgot-pass::before {
+    content: ' ';
+}
+
+.EmailConfirme {
+    font-weight: bold;
+}
