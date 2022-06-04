@@ -34,3 +34,7 @@
 .EmailConfirme {
     font-weight: bold;
 }
+
+.card-register {
+    margin: auto 100px;
+}

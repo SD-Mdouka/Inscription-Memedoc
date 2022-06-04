@@ -36,3 +36,14 @@
         transform: rotate(360deg);
     }
 }
+
+.card-header,
+.card-footer,
+.card {
+    background-color: white;
+    border: none;
+}
+
+.container {
+    padding: 20%;
+}

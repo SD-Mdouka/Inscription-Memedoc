@@ -5,9 +5,9 @@ class HeaderRegister extends Component {
   render() {
     if (window.location.pathname === "/") {
       return (
-        <div className="mb-4">
+        <div>
           <h3>Saisissez votre adresse e-mail</h3>
-          <p className="mb-4 mt-4">
+          <p>
             Vous en aurez besoin pour vous connecter et accéder à votre
             application Memedoc .
           </p>
@@ -15,25 +15,31 @@ class HeaderRegister extends Component {
       );
     } else if (window.location.pathname === "/confirme") {
       return (
-        <div className="mb-4">
+        <div>
           <h3>Un code de confirmation vous attend dans votre boite e-mail</h3>
-          <p className="mb-4 mt-4">
-            Saisissez le code de 6 chiffres que nous vous avons envoyé sur
-            <br /> <span className="EmailConfirme">m.hameid@trenteneuf.co</span>
-            .
-          </p>
+          <p>Saisissez le code de 6 chiffres que nous vous avons envoyé sur.</p>
         </div>
       );
     } else if (window.location.pathname === "/confirme_passe_word") {
       return (
-        <div className="mb-4">
+        <>
           <h3>Definissez votre nouveau mots de passe</h3>
-          <p className="mb-4 mt-4">
+          <p>
             Choissiez un mot de passe sécurisé dont vous vous souviendrez
             faciliement .
             <br /> <span className="PSWConfirme">Mot de passe</span>
           </p>
-        </div>
+        </>
+      );
+    } else if (window.location.pathname === "/confirme_passe") {
+      return (
+        <>
+          <h3>Procédons à l'enregistrement de votre pharmacie</h3>
+          <p>
+            Préparez ces élémentspour finaliserl'ouverturede votre compte
+            pharmacien .
+          </p>
+        </>
       );
     } else {
       <div className="mb-4">

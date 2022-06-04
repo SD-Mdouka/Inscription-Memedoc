@@ -1,15 +1,15 @@
 /** @format */
 
 import React, { Component } from "react";
-import Navber from "./../Navbar";
-import Footer from "./../Footer";
-import Register from "./Register";
-import SidbarRegister from "./../Sidbar/SidbarRegister";
+import Navber from "./../..//Navbar";
+import Footer from "./../../Footer";
+import SidbarRegister from "./../../Sidbar/SidbarLogin";
 
-class Pages extends Component {
+import "./style.css";
+
+class Accueil extends Component {
   render() {
     return (
-      //  Strecture Page Global
       <div className="container-fluid">
         <SidbarRegister />
 
@@ -17,9 +17,7 @@ class Pages extends Component {
           <div className="card-header">
             <Navber />
           </div>
-          <div className="card-body card-register">
-            <Register />
-          </div>
+          <div className="card-body card-register"></div>
           <div className="card-footer">
             <Footer />
           </div>
@@ -29,4 +27,4 @@ class Pages extends Component {
   }
 }
 
-export default Pages;
+export default Accueil;

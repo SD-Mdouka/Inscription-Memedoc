@@ -3,6 +3,19 @@
             font-weight: bold;
         }
         
+        .font-lg {
+            font-size: 10px;
+        }
+        
+        .validSpan {
+            background-color: green;
+            font-weight: bold;
+        }
+        
+        .invalid {
+            background-color: #eee;
+        }
+        
         .validationList li,
         a {
             margin: 10px 0;
@@ -30,6 +43,7 @@
         }
         
         .validBtn,
+        .validBtn a,
         .btn-success,
         .confirme {
             background-color: green;
@@ -40,6 +54,7 @@
         }
         
         .btn-success,
+        .validBtn a,
         #userPassword,
         .validBtn,
         .confirme {
@@ -64,10 +79,16 @@
             -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
             -ms-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
             -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
+            -webkit-border-radius: ;
+            -moz-border-radius: ;
+            -ms-border-radius: ;
+            -o-border-radius: ;
+        }
+        
+        .active {
+            color: #ced4da;
+            text-decoration: none;
+            display: none;
         }
         
         .validBtn {
@@ -77,15 +98,20 @@
         }
         
         .validationList {
-            margin: 20px;
+            margin: -27px;
+            padding-top: 20px;
         }
         
         .complet {
             color: gray;
         }
         
-        .validation {
-            padding: 10px;
+        .validationSpan {
+            background-color: #fff;
+            margin-top: 10px;
+            line-height: 1.2;
+            padding-left: 40px;
+            padding-bottom: 20px;
         }
         
         .validation p {
@@ -93,6 +119,15 @@
             font-size: medium;
         }
         /*Show PSW*/
+        
+        .spanList {
+            width: 104px;
+            height: 20px;
+            line-height: 1.2;
+            justify-content: center;
+            display: inline-flex;
+            margin-left: 10px;
+        }
         
         .first-example,
         .second-example,
@@ -130,3 +165,30 @@
             -webkit-appearance: none;
             margin: 0;
         }
+        /*Start form commence*/
+        
+        .chekSIRET {
+            width: 431px;
+            height: 150px;
+            margin: 0px auto 30px;
+            padding: 20px;
+            justify-content: center;
+            background-color: #eee;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+        
+        .passSire {
+            width: max-content;
+            position: relative;
+            right: -10px;
+            top: 20px;
+        }
+        
+        .passSire i {
+            color: #28a745;
+        }
+        /*end form*/
