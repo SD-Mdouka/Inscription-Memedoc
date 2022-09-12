@@ -128,6 +128,14 @@ class FormesRegister extends Component {
             className="btn btn-block btn-success"
             disabled
           >
+            <Spinner
+              as="span"
+              variant="light"
+              size="sm"
+              role="status"
+              aria-hidden="true"
+              animation="border"
+            />
             Confirmer
           </NavLink>
         </form>
